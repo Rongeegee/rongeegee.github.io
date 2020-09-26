@@ -150,7 +150,7 @@ a {
   overflow: hidden; }
   .site-hero, .site-hero .row {
     height: 100vh;
-    min-height: 800px; }
+    min-height: 1000px; }
   .site-hero:before {
     content: "";
     position: absolute;
