@@ -551,7 +551,9 @@ a {
     color: rgba(255, 255, 255, 0.5); }
 
 .site-form .form-control {
-  border: 1px solid #b3bdc6; }
+  border: 1px solid #b3bdc6;
+  color:#fff;
+}
 
 .site-contact-details, .site-contact-details li {
   padding: 0;
