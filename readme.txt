@@ -1,6 +1,6 @@
-Thank you for using our template!
+This is the Repository for Rongan Li's personal website.
 
-For more awesome templates please visit https://colorlib.com/wp/templates/
+The website is built by using a template from https://colorlib.com/wp/templates/
 
 Copyright information for the template can't be altered/removed unless you purchase a license.
 More information about the license is available here: https://colorlib.com/wp/licence/
