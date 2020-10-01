@@ -1,4 +1,4 @@
-This is the Repository for Rongan Li's personal website.
+This is the Repository for Rongan Li's personal website. The resume and porfolio are included on the website.
 
 The website is built by using a template from https://colorlib.com/wp/templates/
 
