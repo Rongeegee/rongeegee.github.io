@@ -680,7 +680,7 @@ a:active {
 }
 
 .resume-item .school {
-	color: rgba(255, 255, 255, 0.3);
+	color: rgb(240, 162, 162);
 }
 
 .resume-item *:last-child {
