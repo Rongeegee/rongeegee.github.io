@@ -1,0 +1,11 @@
+.center {
+    width: 350px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 105px);
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
