@@ -4,6 +4,9 @@
     left: calc(50% - 150px);
     top: calc(50% - 105px);
 }
+#introduction {
+    text-align: center;
+}
 
 a {
     text-decoration: none;
