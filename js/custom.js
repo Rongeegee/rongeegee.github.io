@@ -77,5 +77,34 @@
   new WOW({ mobile: false }).init();
 
 
+  /*-------------------------------------------------------------------------------
+    contact form submisson js
+  -------------------------------------------------------------------------------*/
+  $("#contact-form").submit(function(event) {
+    event.preventDefault();
+    const url = "https://chino-amigo.herokuapp.com/email"
+    let name = $(this).find("#fullname").val().trim();
+    let email = $(this).find("#email").val().trim();
+    let message = $(this).find("#message").val().trim();
+    const data = {
+      "email": email,
+      "message": message,
+      "name": name
+    };
+    const options = {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        },
+    };
+    fetch(url, options)
+        .then(response => response.json())
+        .then( response => {
+          alert("Thank you! Message was sent successfully.");
+        });
+    });
+
   });
 
+  
