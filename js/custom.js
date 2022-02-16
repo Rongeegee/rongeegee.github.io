@@ -101,7 +101,12 @@
     collect visitor information
     -------------------------------------------------------------------------------*/
     $.getJSON("http://ipinfo.io", function(data) {
-      console.log(data);
+      let ipinfo = data;
+      let visitor_data = {
+        visitor_data: data
+      };
+      const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
+      makeApiCall(url,"POST", 'application/json; charset=utf-8', visitor_data) 
     });
   });
 
