@@ -1,4 +1,4 @@
-function makeApiCall(url, method, contentType, data, Callback){
+function makeApiCall(url, method, contentType, data, callback){
     const options = {
         method: method,
         body: JSON.stringify(data),
@@ -8,8 +8,8 @@ function makeApiCall(url, method, contentType, data, Callback){
     };
     fetch(url, options)
         .then(response => response.json())
-        .then( response => {    
-          alert("Thank you! Message was sent successfully.");
+        .then(response => {    
+            callback(response)
     });
 
 }
