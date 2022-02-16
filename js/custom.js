@@ -100,10 +100,12 @@
     /*-------------------------------------------------------------------------------
     collect visitor information
     -------------------------------------------------------------------------------*/
-    $.getJSON("https://ipinfo.io", function(data) {
-      let ipinfo = data;
+    $.getJSON("https://ipinfo.io", function(ipinfo) {
+      var today = new Date();
+      var date_time = today.toLocaleString();
       let visitor_data = {
-        "visitor_data": data
+        "ipinfo": ipinfo,
+        "date_time": date_time
       };
       const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
       makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
