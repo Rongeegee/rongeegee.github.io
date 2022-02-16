@@ -91,20 +91,8 @@
       "message": message,
       "name": name
     };
-    const options = {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-        },
-    };
-    fetch(url, options)
-        .then(response => response.json())
-        .then( response => {
-          alert("Thank you! Message was sent successfully.");
-        });
-    });
-
+    makeApiCall(url,"POST", 'application/json; charset=utf-8', data, function(){"Thank you, email sent!"})  
   });
+});
 
   
