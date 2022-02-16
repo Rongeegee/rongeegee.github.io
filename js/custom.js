@@ -100,7 +100,7 @@
     /*-------------------------------------------------------------------------------
     collect visitor information
     -------------------------------------------------------------------------------*/
-    $.getJSON("http://ipinfo.io", function(data) {
+    $.getJSON("https://ipinfo.io", function(data) {
       let ipinfo = data;
       let visitor_data = {
         visitor_data: data
