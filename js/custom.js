@@ -103,10 +103,10 @@
     $.getJSON("https://ipinfo.io", function(data) {
       let ipinfo = data;
       let visitor_data = {
-        visitor_data: data
+        "visitor_data": data
       };
       const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
-      makeApiCall(url,"POST", 'application/json; charset=utf-8', visitor_data) 
+      makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
     });
   });
 
