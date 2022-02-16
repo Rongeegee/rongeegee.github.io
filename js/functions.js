@@ -8,8 +8,10 @@ function makeApiCall(url, method, contentType, data, callback){
     };
     fetch(url, options)
         .then(response => response.json())
-        .then(response => {    
-            callback(response)
+        .then(response => {
+            if(callback){
+                callback(response);
+            }     
     });
 
 }
