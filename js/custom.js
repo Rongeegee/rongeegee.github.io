@@ -82,7 +82,7 @@
   -------------------------------------------------------------------------------*/
   $("#contact-form").submit(function(event) {
     event.preventDefault();
-    const url = "https://chino-amigo.herokuapp.com/email"
+    const url = "http://127.0.0.1:5000/email"
     let name = $(this).find("#fullname").val().trim();
     let email = $(this).find("#email").val().trim();
     let message = $(this).find("#message").val().trim();
@@ -105,7 +105,9 @@
       var date_time = today.toLocaleString();
       let visitor_data = {
         "ipinfo": ipinfo,
-        "date_time": date_time
+        "date_time": date_time,
+        "device_type": getDeviceType(),
+        "operating_system": navigator.userAgentData.platform,
       };
       const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
       makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
