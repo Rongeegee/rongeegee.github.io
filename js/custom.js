@@ -82,7 +82,7 @@
   -------------------------------------------------------------------------------*/
   $("#contact-form").submit(function(event) {
     event.preventDefault();
-    const url = "http://127.0.0.1:5000/email"
+    const url = "https://chino-amigo.herokuapp.com/email";
     let name = $(this).find("#fullname").val().trim();
     let email = $(this).find("#email").val().trim();
     let message = $(this).find("#message").val().trim();
