@@ -103,11 +103,13 @@
     $.getJSON("https://ipinfo.io", function(ipinfo) {
       var today = new Date();
       var date_time = today.toLocaleString();
+      let device_type = getDeviceType() ? getDeviceType() : "";
+      let operating_system = navigator.userAgentData.platform ? navigator.userAgentData.platform : "";
       let visitor_data = {
         "ipinfo": ipinfo,
         "date_time": date_time,
-        "device_type": getDeviceType(),
-        "operating_system": navigator.userAgentData.platform,
+        "device_type": device_type,
+        "operating_system": operating_system,
       };
       const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
       makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
