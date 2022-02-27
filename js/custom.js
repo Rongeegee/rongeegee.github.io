@@ -104,7 +104,7 @@
       var today = new Date();
       var date_time = today.toLocaleString();
       let device_type = getDeviceType() ? getDeviceType() : "";
-      let operating_system = navigator.userAgentData.platform ? navigator.userAgentData.platform : "";
+      let operating_system = getOperatingSytem();
       let visitor_data = {
         "ipinfo": ipinfo,
         "date_time": date_time,
