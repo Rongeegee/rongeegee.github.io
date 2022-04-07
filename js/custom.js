@@ -1,19 +1,19 @@
 
 
-  /*-------------------------------------------------------------------------------
-    PRE LOADER
-  -------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------
+  PRE LOADER
+-------------------------------------------------------------------------------*/
 
-  $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
-  });
+$(window).load(function(){
+  $('.preloader').fadeOut(1000); // set duration in brackets    
+});
 
 
 
-  /* HTML document is loaded. DOM is ready. 
-  -------------------------------------------*/
+/* HTML document is loaded. DOM is ready. 
+-------------------------------------------*/
 
-  $(document).ready(function() {
+$(document).ready(function() {
 
 
   /*-------------------------------------------------------------------------------
@@ -100,20 +100,23 @@
     /*-------------------------------------------------------------------------------
     collect visitor information
     -------------------------------------------------------------------------------*/
-    $.getJSON("https://ipinfo.io", function(ipinfo) {
-      var today = new Date();
-      var date_time = today.toLocaleString();
-      let device_type = getDeviceType() ? getDeviceType() : "";
-      let operating_system = getOperatingSytem();
-      let visitor_data = {
-        "ipinfo": ipinfo,
-        "date_time": date_time,
-        "device_type": device_type,
-        "operating_system": operating_system,
-      };
-      const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
-      makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
-    });
+  $.getJSON("https://ipinfo.io", function(ipinfo) {
+    var today = new Date();
+    var date_time = today.toLocaleString();
+    let device_type = getDeviceType() ? getDeviceType() : "";
+    let operating_system = getOperatingSytem();
+    if(ipinfo.hostname.toLowerCase().indexOf("bot") > -1){
+      window.location.href = "https://www.youtube.com/watch?v=fFZe3RhQ_QE&ab_channel=hallbe"
+    }
+    let visitor_data = {
+      "ipinfo": ipinfo,
+      "date_time": date_time,
+      "device_type": device_type,
+      "operating_system": operating_system,
+    };
+    const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
+    makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
+  });
   });
 
   
