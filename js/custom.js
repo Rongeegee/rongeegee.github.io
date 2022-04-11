@@ -105,7 +105,7 @@ $(document).ready(function() {
     var date_time = today.toLocaleString();
     let device_type = getDeviceType() ? getDeviceType() : "";
     let operating_system = getOperatingSytem();
-    if(ipinfo.hostname.toLowerCase().indexOf("bot") > -1){
+    if(ipinfo.hostname && ipinfo.hostname.toLowerCase().indexOf("bot") > -1){
       window.location.href = "https://www.youtube.com/watch?v=fFZe3RhQ_QE&ab_channel=hallbe"
     }
     let visitor_data = {
