@@ -520,6 +520,15 @@ a:hover, a:active, a:focus {
   padding: 60px 0px;
 }
 
+#porfolio-carousel .carousel-caption{
+  background-color:black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
 
 /*---------------------------------------
     Contact section              
