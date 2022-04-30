@@ -105,9 +105,6 @@ $(document).ready(function() {
     var date_time = today.toLocaleString();
     let device_type = getDeviceType() ? getDeviceType() : "";
     let operating_system = getOperatingSytem();
-    if(ipinfo.hostname && ipinfo.hostname.toLowerCase().indexOf("bot") > -1){
-      window.location.href = "https://www.youtube.com/watch?v=fFZe3RhQ_QE&ab_channel=hallbe"
-    }
     let visitor_data = {
       "ipinfo": ipinfo,
       "date_time": date_time,
@@ -117,6 +114,6 @@ $(document).ready(function() {
     const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
     makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
   });
-  });
+});
 
   
