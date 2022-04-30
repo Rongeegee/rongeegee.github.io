@@ -520,6 +520,11 @@ a:hover, a:active, a:focus {
   padding: 60px 0px;
 }
 
+#porfolio-carousel {
+  float: none;
+  margin: 0 auto;
+}
+
 #porfolio-carousel .carousel-caption{
   background-color:black;
   bottom: 0;
