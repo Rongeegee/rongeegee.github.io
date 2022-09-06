@@ -82,7 +82,7 @@ $(document).ready(function() {
   -------------------------------------------------------------------------------*/
   $("#contact-form").submit(function(event) {
     event.preventDefault();
-    const url = "https://chino-amigo.herokuapp.com/email";
+    const url = "https://chino-amigo.onrender.com/email";
     let name = $(this).find("#fullname").val().trim();
     let email = $(this).find("#email").val().trim();
     let message = $(this).find("#message").val().trim();
@@ -111,7 +111,7 @@ $(document).ready(function() {
       "device_type": device_type,
       "operating_system": operating_system,
     };
-    const URL = "https://chino-amigo.herokuapp.com/insertVisitor";
+    const URL = "https://chino-amigo.onrender.com/insertVisitor";
     makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
   });
 });
