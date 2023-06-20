@@ -82,7 +82,7 @@ $(document).ready(function() {
   -------------------------------------------------------------------------------*/
   $("#contact-form").submit(function(event) {
     event.preventDefault();
-    const url = "http://162.248.100.11:3001/visit-notification";
+    const url = "https://chino-amigo.onrender.com/email";
     let name = $(this).find("#fullname").val().trim();
     let email = $(this).find("#email").val().trim();
     let message = $(this).find("#message").val().trim();
