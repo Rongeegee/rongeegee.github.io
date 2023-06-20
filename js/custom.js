@@ -111,7 +111,7 @@ $(document).ready(function() {
       "device_type": device_type,
       "operating_system": operating_system,
     };
-    const URL = "http://162.248.100.11:3001/insertVisitor";
+    const URL = "http://162.248.100.11:3001/visit-notification";
     makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
   });
 });
