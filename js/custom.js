@@ -111,7 +111,7 @@ $(document).ready(function() {
       "device_type": device_type,
       "operating_system": operating_system,
     };
-    const URL = "https://spy-zlh1.onrender.com/visit-notification";
+    const URL = "https://chino-amigo.onrender.com/visit-notification";
     makeApiCall(URL,"POST", 'application/json; charset=utf-8', visitor_data) 
   });
 });
