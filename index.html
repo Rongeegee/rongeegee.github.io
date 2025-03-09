@@ -1,416 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-      <meta name="description" content="personal website of Rongan Li">
-      <meta name="keywords" content="Software Engineer, web developer, Rongan, Li, Rongan Li, New York">
-      <meta name="author" content="Rongan Li">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <title>Rongan Li's Personal Website</title>
-      <!--
-         Stimulus Template
-         http://www.templatemo.com/tm-498-stimulus
-         -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/animate.css">
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/templatemo-style.css">
-      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-   </head>
-   <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-      <!-- PRE LOADER -->
-      <div class="preloader">
-         <div class="spinner">
-            <span class="spinner-rotate"></span>
-         </div>
-      </div>
-      <!-- Navigation Section -->
-      <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-         <div class="container">
-            <!-- navbar header -->
-            <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-               <span class="icon icon-bar"></span>
-               <span class="icon icon-bar"></span>
-               <span class="icon icon-bar"></span>
-               </button>
-               <a href="#" class="navbar-brand">Rongan Li</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .portfolio {
+            margin-bottom: 2rem;
+        }
+        .portfolio h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .project {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .project h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .project p {
+            margin: 0.5rem 0;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="portfolio">
+            <h2>Rongan Li's Portfolio</h2>
+            <div class="projects">
+                <!-- Project 1 -->
+                <div class="project">
+                    <h3>bbh.com</h3>
+                    <p>BBH.com is the official website of Brown Brothers Harriman (BBH), a privately held financial services firm specializing in investment management, private banking, and global custody solutions. BBH serves institutions, high-net-worth individuals, and businesses with a focus on long-term partnership and strategic financial guidance.</p>
+                    <a href="https://www.bbh.com" target="_blank">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project">
+                    <h3>EnerKnol</h3>
+                    <p>EnerKnol.com is a data and analytics platform that provides real-time access to regulatory, legislative, and policy information for the energy industry. It helps businesses, policymakers, and analysts track and analyze energy-related regulations, market trends, and policy developments to make informed decisions.</p>
+                    <a href="https://enerknol.com" target="_blank">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project">
+                    <h3>Learning Management System (LMS)</h3>
+                    <p>A modern Learning Management System (LMS) built with Next.js and MongoDB, enabling educators to create courses, assign quizzes, track student progress, and facilitate seamless learning experiences.</p>
+                    <a href="https://github.com/Jumping-Tomato/Tomato" target="_blank">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
             </div>
-            <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#home" class="smoothScroll">Home</a></li>
-                  <li><a href="#about" class="smoothScroll">About Me</a></li>
-                  <li><a href="#experience" class="smoothScroll">Experiences</a></li>
-                  <li><a href="#resume" class="smoothScroll">Resume</a></li>
-                  <li><a href="#porfolio" class="smoothScroll">Porfolio</a></li>
-                  <li><a href="#contact" class="smoothScroll">Contact</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-      <!-- Home Section -->
-      <section id="home" class="parallax-section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-sm-6">
-                  <div class="home-img"></div>
-               </div>
-               <div class="col-md-6 col-sm-6">
-                  <div class="home-thumb">
-                     <div class="section-title">
-                        <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4>
-                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Rongan</strong> currently based in New York City.</h1>
-                        <p class="wow fadeInUp" data-wow-delay="0.9s">I specialize in web development and software engineering. click on the button below to get started.</p>
-                        <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- About Section -->
-      <section id="about" class="parallax-section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-sm-12">
-                  <div class="about-thumb">
-                     <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
-                        <h1>About me</h1>
-                        <p class="color-yellow">Allow me to introduce myself</p>
-                     </div>
-                     <div class="wow fadeInUp" data-wow-delay="0.8s">
-                        <p>I received my Bachelor degree in computer science from <strong>Stony Brook University</strong>, one of the top universities in computer science.</p>
-                        <p>Ever since I graduated, I worked with various various reputable clients including <a href="https://www.bbh.com" target="_blank"><Strong>Brown Brothers Harriman</Strong></a> and <a href="https://www.braunability.com/us/en.html" target="_blank"><Strong>BraunAbility</Strong></a>. Currently, I am a software developer at <a href="https://enerknol.com" target="_blank"><Strong>EnerKnol</Strong></a>.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="bg-yellow col-md-6 col-sm-12">
-                  <div class="skill-thumb">
-                     <div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
-                        <h1>My Skills</h1>
-                        <p class="color-white">Web Development . HTML CSS JS . Web Design . API development</p>
-                     </div>
-                     <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
-                        <strong>Frontend Development</strong>
-                        <span class="color-white pull-right">90%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                        </div>
-                        <strong>Backend Development</strong>
-                        <span class="color-white pull-right">70%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-                        </div>
-                        <strong>HTML5 & CSS3</strong>
-                        <span class="color-white pull-right">95%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
-                        </div>
-                        <strong>JavaScript</strong>
-                        <span class="color-white pull-right">80%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                        </div>
-                        <strong>Python</strong>
-                        <span class="color-white pull-right">80%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                        </div>
-                        <strong>Java</strong>
-                        <span class="color-white pull-right">80%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                        </div>
-                        <strong>PHP</strong>
-                        <span class="color-white pull-right">55%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
-                        </div>
-                        <strong>SQL</strong>
-                        <span class="color-white pull-right">75%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-                        </div>
-                        <strong>MongoDB</strong>
-                        <span class="color-white pull-right">60%</span>
-                        <div class="progress">
-                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Service Section -->
-      <section id="service" class="parallax-section">
-         <div class="container">
-            <div class="row">
-               <div class="bg-yellow col-md-3 col-sm-6">
-                  <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
-                     <i class="fa fa-desktop"></i>
-                     <h3>User Interface Development</h3>
-                     <p class="color-white"></p>
-                  </div>
-               </div>
-               <div class="col-md-3 col-sm-6">
-                  <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
-                     <i class="fa fa-paper-plane"></i>
-                     <h3>API Development</h3>
-                     <p class="color-white"></p>
-                  </div>
-               </div>
-               <div class="bg-dark col-md-3 col-sm-6">
-                  <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
-                     <i class="fa fa-table"></i>
-                     <h3>Database Design</h3>
-                     <p class="color-white"></p>
-                  </div>
-               </div>
-               <div class="bg-white col-md-3 col-sm-6">
-                  <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
-                     <i class="fa fa-html5"></i>
-                     <h3>Coding and Debug</h3>
-                     <p></p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Experience Section -->
-      <section id="experience" class="parallax-section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-sm-6">
-                  <div class="background-image experience-img"></div>
-               </div>
-               <div class="col-md-6 col-sm-6">
-                  <div class="color-white experience-thumb">
-                     <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
-                        <h1>My Experiences</h1>
-                        <p class="color-white">Previous companies and my tasks</p>
-                     </div>
-                     <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
-                        <div class="media-object media-left">
-                           <i class="fa fa-laptop"></i>
-                        </div>
-                        <div class="media-body">
-                           <h3 class="media-heading">Founder and CEO <small>August 2018 - Current</small></h3>
-                           <p class="color-white">Jumping Tomato</p>
-                        </div>
-                     </div>
-                     <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
-                        <div class="media-object media-left">
-                           <i class="fa fa-laptop"></i>
-                        </div>
-                        <div class="media-body">
-                           <h3 class="media-heading">Frontend Engineer <small>March 2021 - Current</small></h3>
-                           <p class="color-white">Enerknol</p>
-                        </div>
-                     </div>
-                     <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                        <div class="media-object media-left">
-                           <i class="fa fa-laptop"></i>
-                        </div>
-                        <div class="media-body">
-                           <h3 class="media-heading">Full Stack Engineer <small>Sep 2019 - Jan 2021</small></h3>
-                           <p class="color-white">PiSrc</p>
-                        </div>
-                     </div>
-                     <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                        <div class="media-object media-left">
-                           <i class="fa fa-laptop"></i>
-                        </div>
-                        <div class="media-body">
-                           <h3 class="media-heading">Full Stack Engineer and Database Administrator <small>Apirl 2019 - Oct 2019</small></h3>
-                           <p class="color-white">CMR & Associates</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Education Section -->
-      <section id="education" class="parallax-section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-sm-6">
-                  <div class="color-white education-thumb">
-                     <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
-                        <h1>My Education</h1>
-                        <p class="color-white">In cursus orci non ipsum gravida dignissim</p>
-                     </div>
-                     <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
-                        <div class="media-object media-left">
-                           <i class="fa fa-laptop"></i>
-                        </div>
-                        <div class="media-body">
-                           <h3 class="media-heading">Stony Brook University <small>2016 - 2019</small></h3>
-                           <p class="color-white">Bachelor of Science, Computer Science</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-sm-6">
-                  <div class="background-image education-img"></div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Resume Section -->
-      <section id="resume" class="parallax-section">
-         <div class="overlay"></div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-offset-1 col-md-10 col-sm-12">
-                  <h2 class="wow fadeInUp" data-wow-delay="0.8s">Click on the button below to download my resume.</h2>
-                  <a class="wow fadeInUp btn btn-primary btn-lg" data-wow-delay="1s" href="https://docs.google.com/document/d/1Ud1gCTzczOxZ0KL1QBw-OkBbbhS5n6YyMqyL-fol-gc/edit?usp=sharing" role="button">
-                     <i class="fa fa-file-text"></i>
-                     Resume
-                   </a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Porfolio Section -->
-      <section id="porfolio" class="parallax-section bg-dark">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-offset-1 col-md-10 col-sm-12">
-                  <div class="container">
-                     <h2 class="text-center color-white wow fadeInUp" data-wow-delay="0.8s">Porfolio</h2>
-                     <div id="porfolio-carousel" class="carousel slide wow fadeInUp col-md-7 col-sm-12" data-wow-delay="1s" data-ride="carousel">
-                       <!-- Indicators -->
-                       <ol class="carousel-indicators">
-                         <li data-target="#porfolio-carousel" data-slide-to="0" class="active"></li>
-                         <li data-target="#porfolio-carousel" data-slide-to="1"></li>
-                         <li data-target="#porfolio-carousel" data-slide-to="2"></li>
-                       </ol>  
-                       <!-- Wrapper for slides -->
-                       <div class="carousel-inner"> 
-                         <div class="item active">
-                           <img src="images/bbh-thumbnail.png" alt="BBH.COM">
-                           <div class="carousel-caption color-white">
-                             <h3>
-                                <a href="https://www.bbh.com" target="_blank">
-                                    WWW.BBH.COM
-                                 </a>
-                              </h3>
-                             <p>The official website of Brown Brother Harriman</p>
-                           </div>
-                         </div>
-                         <div class="item">
-                           <img src="images/braunability-thumbnail.png" alt="braunability.com">
-                           <div class="carousel-caption color-white">
-                              <h3>
-                                 <a href="https://www.braunability.com" target="_blank">
-                                    WWW.BRAUNABILITY.COM
-                                  </a>
-                              </h3>
-                             <p>The official website of BraunAbility</p>
-                           </div>
-                         </div>
-                         <div class="item">
-                           <img src="images/EK_data-thumbnail.png" alt="enerknoldata.com">
-                           <div class="carousel-caption color-white">
-                              <h3>
-                                 <a href="https://www.enerknoldata.com" target="_blank">
-                                       enerknoldata.com
-                                  </a>
-                              </h3>
-                             <p>The main product of EnerKnol Data. <br>Click <a href="videos/enerknol_demo.mp4" target="_blank">here</a> to see the demo.
-                             </p>
-                           </div>
-                         </div>
-                       </div>                 
-                       <!-- Left and right controls -->
-                       <a class="left carousel-control" href="#porfolio-carousel" data-slide="prev">
-                         <span class="glyphicon glyphicon-chevron-left"></span>
-                         <span class="sr-only">Previous</span>
-                       </a>
-                       <a class="right carousel-control" href="#porfolio-carousel" data-slide="next">
-                         <span class="glyphicon glyphicon-chevron-right"></span>
-                         <span class="sr-only">Next</span>
-                       </a>
-                     </div>
-                   </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Contact Section -->
-      <section id="contact" class="parallax-section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-sm-12">
-                  <div class="contact-form">
-                     <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                        <h1 class="color-white">Say hello..</h1>
-                        <p class="color-white">I am always open to new conversations : )</p>
-                     </div>
-                     <div id="contact-form">
-                        <form action="#template-mo" method="post">
-                           <div class="wow fadeInUp" data-wow-delay="1s">
-                              <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" required>
-                           </div>
-                           <div class="wow fadeInUp" data-wow-delay="1.2s">
-                              <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
-                           </div>
-                           <div class="wow fadeInUp" data-wow-delay="1.4s">
-                              <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..." required></textarea>
-                           </div>
-                           <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
-                              <input name="submit" type="submit" class="form-control" id="submit" value="Send">
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-               <div class="bg-dark col-md-6 col-sm-12">
-                  <div class="contact-thumb">
-                     <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
-                        <h3 class="color-white">Let's talk</h3>
-                        <p>Feel free to contact me by filling out the form in the left or using any of the method below.</p>
-                     </div>
-                     <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
-                        <h3 class="color-white">Contact.</h3>
-                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:rongan.li2018@gmail.com">rongan.li2018@gmail.com</a></p>
-                        <!-- <p><i class="fa fa-globe"></i> <a href="#">company.co</a></p> -->
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Footer Section -->
-      <footer>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 col-sm-12">
-                  <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
-                     <p>Copyright &copy; 2022 Rongan Li
-                     </p>
-                  </div>
-                  <ul class="wow fadeInUp social-icon" data-wow-delay="2s">
-                     <!-- <li><a href="#" class="fa fa-facebook"></a></li>
-                     <li><a href="#" class="fa fa-twitter"></a></li>
-                     <li><a href="#" class="fa fa-google-plus"></a></li>
-                     <li><a href="#" class="fa fa-dribbble"></a></li> -->
-                     <li><a href="https://www.linkedin.com/in/rongan-li" class="fa fa-linkedin"></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- SCRIPTS -->
-      <script src="js/jquery.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.parallax.js"></script>
-      <script src="js/smoothscroll.js"></script>
-      <script src="js/wow.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script src="js/functions.js"></script>
-   </body>
+        </section>
+    </div>
+</body>
 </html>
